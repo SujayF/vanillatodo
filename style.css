@@ -90,4 +90,17 @@ header{
     padding-left: 10px;
     padding-top: 6px;
     margin: 5px;
+    display: flex;
 }
+
+.check-box{
+    
+    height: 20px;
+    width: 20px;
+    margin-left: auto;
+    border: 1px;
+    margin-right: 11px;
+
+}
+
+

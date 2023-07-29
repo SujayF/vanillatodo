@@ -46,12 +46,18 @@ let createToDo = () => {
     return;
   }
 
+
+
   const item = document.createElement("li");
   item.innerText = taskText;
   item.classList.add("li-class");
   taskList.appendChild(item);
 
-   //for updating li items
+  const checkbox = document.createElement("input");
+  checkbox.type = "checkbox";
+  checkbox.classList.add("check-box");
+  item.append(checkbox);
+
    //to deleteTask
    let deleteTask = () => {
     taskList.removeChild(item);
@@ -60,5 +66,4 @@ let createToDo = () => {
   item.addEventListener("dblclick", deleteTask);
   task.value = "";
 };
-
 
